@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset='utf-8'/>
+	<title>1</title>
+
+	<style>
+
+h1 { font-family: "123RF"; font-size: 48px; font-weight: bold; color: #647762 }
+h2 { font-family: "123RF"; font-size: 48px; font-weight: bold; color: #647762 }
+h3 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: bold; color: #647762 }
+h4 {font-family: "Adobe 黑体 Std"; font-size: 30px; font-weight: bold; color: #647762 }
+h5 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: bold; color: #647762 }
+h6 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: normal; color: #647762 }
+h7 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: normal; color: #647762 }
+h8 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: normal; color: #647762 }
+h9 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: normal; color: #647762 }
+h10 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: normal; color: #647762 }
+h11 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: normal; color: #647762 }
+h12 { font-family: "123RF"; font-size: 150px;font-weight: bold; color: #647762 }
+h13 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px; font-weight: normal; color: #647762 }
+h14 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h15 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h16 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h17 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h18 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h19 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h20 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h21 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h22 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h23 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h24 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h25 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h26 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h27 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h28 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h29 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h30 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h31 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h32 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h33 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h34 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h35 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h36 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h37 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h38 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h39 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h40 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h41 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h42 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h43 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h44 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h45 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h46 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h47 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h48 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h49 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h50 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h51 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h52 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h53 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h54 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h55 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h56 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h57 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h58 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h59 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h60 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h61 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h62 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h63 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h64 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h65 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h66 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h67 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h68 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h69 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h70 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h71 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h72 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h73 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h74 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h75 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h76 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h77 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h78 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h79 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h80 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h81 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h82 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h83 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h84 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h85 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h86 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h87 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h88 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h89 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h90 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h91 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h92 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h93 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h94 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h95 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h96 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h97 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h98 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h99 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h100 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h101 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h102 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h103 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h104 { font-family: "123RF"; font-size: 50px;font-weight: bold; color: #647762 }
+h105 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h106 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h107 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h108 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h109 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h110 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h111 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h112 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h113 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h114 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h115 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h116 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h117 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h118 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h119 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h120 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h121 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h122 { font-family: "210 GureumGothicOTF 050 보통"; font-size: 24px;font-weight: bold; font-weight: normal; color: #647762 }
+h123 { font-family: "123RF"; font-size: 160px;font-weight: bold; color: #c19a8b }
+h124 { font-family: "123RF"; font-size: 160px;font-weight: bold; color: #c19a8b }
+a:link { font-family: "123RF"; font-size: 50px; font-weight: bold; color: #f09d7c }
+h125{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: bold; color: #947669}
+h126{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: bold; color: #947669}
+h127{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: bold; color: #947669}
+h128{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+h129{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+h130{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+h131{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+h132{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+h133{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+h134{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+h135{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+h136{ font-family: "210 GureumGothicOTF 050 보통"; font-size: 30px;font-weight: bold; font-weight: normal; color: #947669}
+
+
+		#pink1p{width: 100%; height: 919px; background: #f0bcc0; }
+
+		#yell2p{width: 100%; height: 8191px; background: #f2e3b4; }
+		#y1{position: absolute; top: 1100px; left: 305px; }
+		#y2{position: absolute; top: 1150px; left: 305px}
+		#y3{position: absolute; top: 1230px; left: 305px}
+		#y4{position: absolute; top: 1250px; left: 305px}
+		#y5{position: absolute; top: 1280px; left: 305px}		
+		#y6{position: absolute; top: 1350px; left: 320px}
+		#y7{position: absolute; top: 1460px; left: 320px}
+		#y8{position: absolute; top: 1500px; left: 290px}
+		#y9{position: absolute; top: 1560px; left: 320px}
+		#y10{position: absolute; top: 1600px; left: 320px}
+		#y11{position: absolute; top: 1640px; left: 320px}
+
+		#yell2p2{position:  absolute; width: 100%; top: 928px; left: 960px; background: #efece2}
+
+		#v1{position: absolute; width: 100%; height: 671px; top: 2050px}
+		#v2{position: absolute; width: 100%; height: 346px; top: 2720px}
+		#v3{position: absolute; width: 100%; height: 396px; top: 2670px; left: 632px}
+		#v4{position: absolute; width: 100%; height: 715px; top: 2670px; left: 1200px}
+		#v5{position: absolute; width: 100%; height: 200px; top: 2780px; left: 1330px}
+		#v6{position: absolute; width: 100%; height: 553px; top: 2864px; left: 779px}
+		#v6-1{position: absolute; width: 100%; height: 757px; top: 2670px; left: 770px; background: #c19a8b}
+		#v7{position: absolute; width: 100%; height: 270px; top: 3330px; left: 1490px}
+
+		#l1{position: absolute; top: 3100px; left: 360px}
+		#l2{position: absolute; width: 100%; top: 3180px; left: 250px}
+		
+		#l3{position: absolute; top: 3539px; left: 360px}
+		
+		#l4{position: absolute; top: 3704px; left: 360px}
+		#l5{position: absolute; top: 3704px; left: 1028px}
+		
+		#l6{position: absolute; top: 3782px; left: 360px}
+		#l7{position: absolute; top: 3812px; left: 360px}
+		#l8{position: absolute; top: 3782px; left: 1028px}
+		#l9{position: absolute; top: 3842px; left: 1028px}
+		#l10{position: absolute; top: 3872px; left: 1028px}
+		
+		#l11{position: absolute; top: 3988px; left: 360px}
+		#l12{position: absolute; top: 3988px; left: 1028px}
+		
+		#l13{position: absolute; top: 4066px; left: 360px}
+		#l14{position: absolute; top: 4096px; left: 360px}
+		#l15{position: absolute; top: 4066px; left: 1028px}
+		#l16{position: absolute; top: 4096px; left: 1028px}
+		#l17{position: absolute; top: 4156px; left: 360px}
+		#l18{position: absolute; top: 4156px; left: 1028px}
+		#l19{position: absolute; top: 4216px; left: 360px}
+		#l20{position: absolute; top: 4246px; left: 360px}
+		
+		#l21{position: absolute; top: 4362px; left: 360px}
+		#l22{position: absolute; top: 4362px; left: 1028px}
+		
+		#l23{position: absolute; top: 4440px; left: 360px}
+		#l24{position: absolute; top: 4470px; left: 360px}
+		#l25{position: absolute; top: 4440px; left: 1028px}
+		#l26{position: absolute; top: 4470px; left: 1028px}
+		#l27{position: absolute; top: 4530px; left: 360px}
+		#l28{position: absolute; top: 4530px; left: 1028px}
+		
+		#l29{position: absolute; top: 4646px; left: 360px}
+		#l30{position: absolute; top: 4646px; left: 1028px}
+		
+		#l31{position: absolute; top: 4724px; left: 360px}
+		#l32{position: absolute; top: 4724px; left: 1028px}
+		#l33{position: absolute; top: 4754px; left: 360px}
+		#l34{position: absolute; top: 4754px; left: 1028px}
+		#l35{position: absolute; top: 4814px; left: 360px}
+		#l36{position: absolute; top: 4814px; left: 1028px}
+		#l37{position: absolute; top: 4844px; left: 360px}
+		#l38{position: absolute; top: 4844px; left: 1028px}
+		#l39{position: absolute; top: 4904px; left: 360px}
+		#l40{position: absolute; top: 4934px; left: 360px}
+		#l41{position: absolute; top: 4994px; left: 360px}
+		#l42{position: absolute; top: 5024px; left: 360px}
+		#l43{position: absolute; top: 5084px; left: 360px}
+		#l44{position: absolute; top: 5114px; left: 360px}
+		#l45{position: absolute; top: 5174px; left: 360px}
+		#l46{position: absolute; top: 5204px; left: 360px}
+
+		#l47{position: absolute; top: 5320px; left: 360px}
+		#l48{position: absolute; top: 5320px; left: 1028px}
+
+		#l49{position: absolute; top: 5398px; left: 360px}
+		#l50{position: absolute; top: 5398px; left: 1028px}
+		#l51{position: absolute; top: 5428px; left: 360px}
+		#l52{position: absolute; top: 5428px; left: 1028px}
+		#l53{position: absolute; top: 5488px; left: 360px}
+		#l54{position: absolute; top: 5488px; left: 1028px}
+		#l55{position: absolute; top: 5518px; left: 360px}
+		#l56{position: absolute; top: 5518px; left: 1028px}
+
+		#l57{position: absolute; top: 5634px; left: 360px}
+		#l58{position: absolute; top: 5634px; left: 1028px}
+		
+		#l59{position: absolute; top: 5712px; left: 360px}
+		#l60{position: absolute; top: 5712px; left: 1028px}
+		#l61{position: absolute; top: 5742px; left: 360px}
+		#l62{position: absolute; top: 5742px; left: 1028px}
+		
+		#l63{position: absolute; top: 5802px; left: 360px}
+		
+		#l64{position: absolute; top: 5802px; left: 1028px}
+		#l65{position: absolute; top: 5862px; left: 360px}
+		#l66{position: absolute; top: 5862px; left: 1028px}
+		
+		#l70{position: absolute; top: 5892px; left: 360px}
+		#l68{position: absolute; top: 5922px; left: 1028px}
+		#l69{position: absolute; top: 5922px; left: 360px}
+		
+		#l67{position: absolute; top: 5822px; left: 1028px}
+
+		#l71{position: absolute; top: 5942px; left: 1028px}
+		#l72{position: absolute; top: 5952px; left: 360px}
+		#l73{position: absolute; top: 6012px; left: 360px}
+		#l74{position: absolute; top: 6042px; left: 360px}
+
+		#l75{position: absolute; top: 6158px; left: 360px}
+		#l76{position: absolute; top: 6158px; left: 1028px}
+
+		#l77{position: absolute; top: 6236px; left: 360px}
+		#l78{position: absolute; top: 6236px; left: 1028px}
+		#l79{position: absolute; top: 6266px; left: 360px}
+		#l80{position: absolute; top: 6266px; left: 1028px}
+		#l81{position: absolute; top: 6326px; left: 360px}
+		#l82{position: absolute; top: 6326px; left: 1028px}
+		#l83{position: absolute; top: 6356px; left: 360px}
+		#l84{position: absolute; top: 6356px; left: 1028px}
+		#l85{position: absolute; top: 6386px; left: 1028px}
+		#l86{position: absolute; top: 6416px; left: 360px}
+		#l87{position: absolute; top: 6416px; left: 1028px}
+		#l88{position: absolute; top: 6446px; left: 360px}
+		#l89{position: absolute; top: 6476px; left: 1028px}
+		#l90{position: absolute; top: 6506px; left: 1028px}
+		#l91{position: absolute; top: 6566px; left: 1028px}
+		#l92{position: absolute; top: 6596px; left: 1028px}
+
+		#l93{position: absolute; top: 6712px; left: 360px}
+		#l94{position: absolute; top: 6712px; left: 1028px}
+
+		#l95{position: absolute; top: 6790px; left: 360px}
+		#l96{position: absolute; top: 6790px; left: 1028px}
+		#l97{position: absolute; top: 6820px; left: 360px}
+		#l98{position: absolute; top: 6820px; left: 1028px}
+		#l99{position: absolute; top: 6880px; left: 360px}
+		#l100{position: absolute; top: 6880px; left: 1028px}
+		#l101{position: absolute; top: 6910px; left: 360px}
+		#l102{position: absolute; top: 6910px; left: 1028px}
+		#l103{position: absolute; top: 6970px; left: 360px}
+		#l104{position: absolute; top: 6970px; left: 1028px}
+		#l105{position: absolute; top: 7000px; left: 360px}
+		#l106{position: absolute; top: 7000px; left: 1028px}
+		#l107{position: absolute; top: 7060px; left: 360px}
+		#l108{position: absolute; top: 7090px; left: 360px}
+		#l109{position: absolute; top: 7120px; left: 360px}
+		#l110{position: absolute; top: 7150px; left: 360px}
+		#l111{position: absolute; top: 7210px; left: 360px}
+		#l112{position: absolute; top: 7240px; left: 360px}
+
+		#b1{position: absolute; width: 100%; height: 482px; top: 7356px}
+		#b2{position: absolute; width: 100%; height: 482px; top: 7356px; left: 630px}
+		#b3{position: absolute; width: 100%; height: 482px; top: 7356px; left: 1450px}
+		#b4{position: absolute; width: 100%; height: 553px; top: 7468px; left: 995px}
+		
+		#b5{position: absolute; width: 100%; height: 160px; top: 7861px ;left:148px}
+		#b6{position: absolute; top: 7919px ;left:269px}
+		#b7{position: absolute; top: 8099px ;left:269px}
+		
+		#b8{position: absolute;width: 100%; top: 8333px; left: 269px  }
+		#b9{position: absolute;width: 100%; top: 8367px; left: 445px  }
+		#b10{position: absolute;width: 100%; top: 8447px; left: 445px  }
+		#b11{position: absolute;width: 100%; top: 8398px; left: 202px  }
+		#b12{position: absolute;width: 100%; top: 8353px; left: 1489px  }
+
+		#pink2p{width: 100%; top: 8500px ; height: 1210px; background: #fbc8b3; }
+		#p1{position: absolute;width: 100%; top: 8651px;}
+		#p2{position: absolute;width: 100%; top: 8651px; height: 512px ;left: 453px}
+		#p3{position: absolute;width: 100%; top: 8651px; height: 512px ; left: 1100px}
+		#p4{position: absolute; width: 100%; top: 9325px; left: 119px}
+		#p5{position: absolute; width: 100%; top: 9325px; left: 1032px}
+		#p6{position: absolute; width: 100%; top: 9250px; left: 1802px}
+		#p7{position: absolute; width: 100%; top: 10015px}
+		#p8{position: absolute; width: 100%; top: 9900px; left: 1180px}
+
+		#k1{position: absolute; top:9529px ;left: 294px}
+		#k2{position: absolute; top:9676px ;left: 294px}
+		#k3{position: absolute; top:9955px ;left: 294px}
+
+		#k4{position: absolute; top:9569px ;left: 309px}
+		#k5{position: absolute; top:9609px ;left: 309px}
+		#k6{position: absolute; top:9716px ;left: 309px}
+		
+		#k7{position: absolute; top:9756px ;left: 351px}
+		#k8{position: absolute; top:9796px ;left: 309px}
+		#k9{position: absolute; top:9836px ;left: 351px}
+		#k10{position: absolute; top:9995px;left: 309px}
+		#k11{position: absolute; top:10035px;left: 309px}
+		#k12{position: absolute; top:10075px;left: 309px}
+
+	</style>
+	</head>
+
+	<body>
+		<div id="pink1p">
+			<img src="1p.png">
+		</div>
+		<div id="yell2p">
+			<img src="2p1.png">
+			<h1 id="y1">Kyoto</h1>
+			<h2 id="y2">Animation</h2>
+			<h3 id="y3">주식회사 교토 애니메이션</h3>
+			<h4 id="y4">株式会社 京都アニメーション</h4>
+			<h5 id="y5">(Kyoto Animation Co.,Ltd.)</h5>
+			<h6 id="y6">교토 애니메이션은</h6>
+			<h7 id="y7">일명 쿄애니라 불리는</h7>
+			<h8 id="y8">일본의 애니메이션 제작사입니다.</h8>
+			<h9 id="y9">京都アニメーションは</h9>
+			<h10 id="y10">別名京アニ(kyo ani)と呼ばれる</h10>
+			<h11 id="y11">日本のアニメ制作会社です。</h11>
+		</div>
+		<div id="yell2p2">
+			<img src="2p2.png">
+		</div>
+		<div id="v1">
+			<img src="violet1.png">
+		</div>
+		<div id="v6-1">
+		</div>
+		
+		<div id="v6">
+			<img src="free.png">
+		</div>
+		<div id="v3">
+			<img src="haruhi.png">
+		</div>
+		<div id="v4">
+			<img src="bing2.png">
+		</div>
+		<div id="v5">
+			<img src="lucky.png">
+		</div>
+		<div id="v2">
+			<img src="bing.png">
+		</div>
+		<div id="v7">
+			<img src="kon.png">
+		</div>
+		<div>
+			<h12 id="l1">LIST</h12>
+		</div>
+		<div id="l2">
+			<img src="4-1.png">
+		</div>
+		<div>
+			<h13 id="l3">2002~2018</h13>
+		</div>
+		<div>
+			<h14 id="l4">2002</h14>
+		</div>
+		<div>
+			<h15 id="l5">2003</h15>
+		</div>
+		<div>
+			<h16 id="l6">너스위치 코무기짱 매지카르테</h16>
+		</div>
+		<div>
+			<h17 id="l7">(ナースウィッチ小麦ちゃんマジカルて)</h17>
+		</div>
+		<div>
+			<h18 id="l8">MUNTO</h18>
+		</div>
+		<div>
+			<h19 id="l9">풀 메타 패틱? 후못후</h19>
+		</div>
+		<div>
+			<h20 id="l10">(フルメタル・パニック? ふもっふ)</h20>
+		</div>
+		<div>
+			<h21 id="l11">2005</h21>
+		</div>
+		<div>
+			<h22 id="l12">2006</h22>
+		</div>
+		<div>
+			<h23 id="l13">MUNTO 시간의 벽을 넘어</h23>
+		</div>
+		<div>
+			<h24 id="l14">(MUNTO 時の壁を越えて)</h24>
+		</div>
+		<div>
+			<h25 id="l15">스즈미야 하루히의 우울</h25>
+		</div>
+			<h26 id="l16">(涼宮ハルヒの憂鬱)</h26>
+		<div>
+			<h27 id="l17">AIR</h27>
+		</div>
+		<div>
+			<h28 id="l18">Kanon</h28>
+		</div>
+		<div>
+			<h29 id="l19">풀 메탈 패닉! The Second Raid</h29>
+		</div>
+		<div>
+			<h30 id ="l20">(フルメタル・パニック! The Second Raid)</h30>
+		</div>
+		<div>
+			<h31 id="l21">2007</h31>
+		</div>
+		<div>
+			<h32 id="l22">2008</h32>
+		</div>
+		<div>
+			<h33 id="l23">러키☆스타</h33>
+		</div>
+		<div>
+			<h34 id="l24">(らき☆すた)</h34>
+		</div>
+		<div>
+			<h35 id="l25">러키☆스타</h35>
+		</div>
+		<div>
+			<h36 id="l26">(らき☆すた)</h36>
+		</div>
+		<div>
+			<h37 id="l27">CLANNAD</h37>
+		</div>
+		<div>
+			<h38 id="l28">CLANNAD~AFTER STORY~</h38>
+		</div>
+		<div>
+			<h39 id="l29">2009</h39>
+		</div>
+		<div>
+			<h40 id="l30">2010</h40>
+		</div>
+		<div>
+			<h41 id="l31">MUNTO 3: 하늘을 바라본 소녀의 눈동자에 비치는 세계</h41>
+		</div>
+		<div>
+			<h42 id="l32">스즈미야 하루히의 소실</h42>
+		</div>
+		<div>
+			<h43 id="l33">(空を見上げる少女の瞳に映る世界)</h43>
+		</div>
+		<div>
+			<h44 id="l34">(涼宮ハルヒの消失)</h44>
+		</div>
+		<div>
+			<h45 id="l35">뇨롱☆츄루야씨</h45>
+		</div>
+		<div>
+			<h46 id="l36">케이온!!</h46>
+		</div>
+		<div>
+			<h47 id="l37">(にょろーん☆ちゅるやさん)</h47>
+		</div>
+		<div>
+			<h48 id="l38">(けいおん！！)</h48>
+		</div>
+		<div>
+			<h49 id="l39">스즈미야 하루히 짱의 우울</h49>
+		</div>	
+		<div>
+			<h50 id="l40">(涼宮ハルヒちゃんの憂鬱)</h50>
+		</div>
+    	<div>
+    		<h51 id="l41">케이온!</h51>
+    	</div>
+    	<div>
+    		<h52 id="l42">(けいおん！)</h52>
+    	</div>
+    	<div>
+    		<h53 id="l43">新스즈미야 하루히의 우울</h53>
+    	</div>
+    	<div>
+    		<h54 id="l44">(涼宮ハルヒの憂鬱(2009年))</h54>
+    	</div>
+    	<div>
+    		<h55 id="l45">MUNTO 극장판: 천상인과 악토인 최후의 전쟁</h55>
+    	</div>
+    	<div>
+    		<h56 id="l46">(天上人とアクト人最後の戦い)</h56>
+    	</div>
+		<div>
+			<h57 id="l47">2011</h57>
+		</div>
+		<div>
+			<h58 id="l48">2012</h58>
+		</div>
+		<div>
+			<h59 id="l49">일상</h59>
+		</div>
+		<div>
+			<h60 id="l50">빙과</h60>
+		</div>
+		<div>
+			<h61 id="l51">(日常)</h61>
+		</div>
+		<div>
+			<h62 id="l52">(氷菓)</h62>
+		</div>
+		<div>
+			<h63 id="l53">영화 케이온</h63>
+		</div>>
+		<div>
+			<h64 id="l54">중2병이라도 사랑이 하고싶어!</h64>
+		</div>
+		<div>
+			<h65 id='l55'>(映画けいおん！)</h65>
+		</div>
+		<div>
+			<h66 id='l56'>(中二病でも恋がしたい！)</h66>
+		</div>
+		<div>
+			<h67 id="l57">2013</h67>
+		</div>
+		<div>
+			<h68 id="l58">2014</h68>
+		</div>
+		<div>
+			<h69 id="l59">타마코 마켓</h69>
+		</div>
+		<div>
+			<h70 id="l60">증2병이라도 사랑이 하고싶어! 戀</h70>
+		</div>
+		<div>
+			<h71 id="l61">(たまこまーけっと)</h71>
+		</div>
+		<div>
+			<h72 id="l62">(中二病でも恋がしたい！ 戀)</h72>
+		</div>
+		<div>
+			<h73 id="l63">Free!</h73>
+		</div>
+		<div>
+			<h74 id="l64">타마코 러브 스토리</h74>
+		</div>
+		<div>
+			<h75 id="l65">타카나시 릿카·改 ~극장판 중2병이라도</h75>
+		</div>
+		<div>
+			<h76 id="l66">Free! Eternal Summer</h76>
+		</div>
+		<div>
+			<h77 id="l67">(たまこラブストーリー)</h77>
+		</div>
+		<div>
+			<h78 id="l70">사랑이 하고싶어!~</h78>
+		</div>
+		<div>
+			<h79 id="l68">아마기 브릴리언트 파크</h79>
+		</div>
+		<div>
+			<h80 id="l69">(小鳥遊六花・改 ～劇場版 中二病でも恋</h80>
+		</div>
+		<div>
+			<h81 id="l71">(甘城ブリリアントパーク)</h81>
+		</div>
+		<div>
+			<h82 id="l72">がしたい！～)</h82>
+		</div>
+		<div>
+			<h83 id="l73">경계의저편</h83>
+		</div>
+		<div>
+			<h84 id="l74">(境界の彼方</h84>
+		</div>
+		<div>
+			<h85 id="l75">2015</h85>
+		</div>
+		<div>
+			<h86 id="l76">2016</h86>
+		</div>
+		<div>
+			<h87 id="l77">극장판 경계의 저편 I`LL BE HERE</h87>
+		</div>
+		<div>
+			<h88 id="l78">무채한의 팬텀 월드</h88>
+		</div>
+		<div>
+			<h89 id="l79">(劇場版 境界の彼方 -I'LL BE HERE-)</h89>
+		</div>
+		<div>
+			<h90 id="l80">(無彩限のファントム・ワールド)</h90>
+		</div>
+		<div>
+			<h91 id="l81">울려라! 유포니엄</h91>
+		</div>
+		<div>
+			<h92 id="l82">극장판 울려라! 유포니엄</h92>
+		</div>
+		<div>
+			<h93 id="l83">(響け!ユーフォニアム)</h93>
+		</div>
+		<div>
+			<h94 id="l84">~키타우지 고교 관악부에 오신 걸 환영합니다~</h94>
+		</div>
+		<div>
+			<h95 id="l85">(劇場版 響け！ユーフォニアム)</h95>
+		</div>
+		<div>
+			<h96 id="l86">영화 하이☆스피드!－Free! Starting Days－</h96>
+		</div>
+		<div>
+			<h97 id="l87">～北宇治高校吹奏楽部へようこそ～)</h97>
+		</div>
+		<div>
+			<h98 id="l88">(映画 ハイ☆スピード！－Free! Starting Days－)</h98>
+		</div>
+		<div>
+			<h99 id="l89">목소리의 형태</h99>
+		</div>
+		<div>
+			<h100 id="l90">(映画 聲の形)</h100>
+		</div>
+		<div>
+			<h101 id="l91">울려라! 유포니엄2</h101>
+		</div>
+		<div>
+			<h102 id="l92">(響け！ユーフォニアム 2)</h102>
+		</div>
+		<div>
+			<h103 id="l93">2017</h103>
+		</div>
+		<div>
+			<h104 id="l94">2018</h104>
+		</div>
+		<div>
+			<h105 id="l95">코바야시네 메이드래곤</h105>
+		</div>
+		<div>
+			<h106 id="l96">영화 중2병이라도 사랑이 하고싶어!=Take On Me-</h106>
+		</div>
+		<div>
+			<h107 id="l97">(小林さんちのメイドラゴン)</h107>
+		</div>
+		<div>
+			<h108 id="l98">(映画 中二病でも恋がしたい！ -Take On Me-)</h108>
+		</div>
+		<div>
+			<h109 id="l99">극장판 Free! -인연-</h109>
+		</div>
+		<div>
+			<h110 id="l100">바이올렛 에버가든</h110>
+		</div>
+		<div>
+			<h111 id="l101">(劇場版 Free!-Timeless Medley- 絆)</h111>
+		</div>
+		<div>
+			<h112 id="l102">(ヴァイオレット・エヴァーガーデン)</h112>
+		</div>
+		<div>
+			<h113 id="l103">극장판 Free! -약속-</h113>
+		</div>
+		<div>
+			<h114 id="l104">리즈와 파랑새</h114>
+		</div>
+		<div>
+			<h115 id="l105">(劇場版 Free!-Timeless Medley- 約束)</h115>
+		</div>
+		<div>
+			<h116 id="l106">(リズと青い鳥)</h116>
+		</div>
+		<div>
+			<h117 id="l107">울려라! 유포니엄</h117>
+		</div>
+		<div>
+			<h118 id="l108">~닿고 싶은 멜로디~</h118>
+		</div>
+		<div>
+			<h119 id="l109">(劇場版 響け！ユーフォニアム</h119>
+		</div>
+		<div>
+			<h120 id="l110">～届けたいメロディ～)</h120>
+		</div>
+		<div>
+			<h121 id="l111">극장판 Free! -Take your marks-</h121>
+		</div>
+		<div>
+			<h122 id="l112">特別版 Free!-Take Your Marks-</h122>
+		</div>
+		<div id="b1">
+			<img src="u1.png">
+		</div>
+		<div id="b2">
+			<img src="k2.png">
+		</div>
+		<div id="b3">
+			<img src="r1.png">
+		</div>
+		<div id="b4">
+			<img src="v3.png">
+		</div>
+		<div id="b4-1">
+		</div>
+		<div>
+			<h123 id="b6">HOME</h123>
+		</div>
+		<div>
+			<h124 id="b7">PAGE</h124>
+		</div>
+		<div id="b5">
+			<img src="f1.png">
+		</div>
+		<div id="b8">
+			<img src="ob.png">
+		</div>
+		<div id="b9">
+		<a href="http://www.kyotoanimation.co.jp/"> http://www.kyotoanimation.co.jp/</a>
+		</div>
+		<div id="b10">
+		<a href="http://www.animationdo.co.jp/"> http://www.animationdo.co.jp/</a>
+		</div>
+		<div id="b11">
+			<img src="f2.png">
+		</div>
+		<div id="b12">
+			<img src="f3.png">
+		</div>
+		<div id="pink2p">
+		</div>
+		<div id="p1">
+			<img src="m1.png">
+		</div>
+		<div id="p2">
+			<img src="b2.png">
+		</div>
+		<div id="p3">
+			<img src="free2.png">
+		</div>
+		<div id="p4">
+			<img src="doshop.png">
+		</div>
+		<div id="p5">
+			<img src="map.png">
+		</div>
+		<div id="p6">
+			<img src="flowerr.png">
+		</div>
+		<div id="p7">
+			<img src="flower22.png">
+		</div>
+		<div id="p8">
+			<img src="flower33.png">
+		</div>
+		<div>
+			<h125 id="k1">위치</h125>
+		</div>
+		<div>
+			<h126 id="k2">전화번호</h126>
+		</div>
+		<div>
+			<h127 id="k3">영업시간</h127>
+		</div>
+		<div>
+			<h128 id="k4">テ611-0002</h128>
+		</div>
+		<div>
+			<h129 id="k5">京都府宇治市木幡東中13</h129>
+		</div>
+		<div>
+			<h130 id="k6"> ■実地店舗 直通</h130>
+		</div>
+		<div>
+			<h131 id="k7">0774-33-1106</h140>
+		</div>
+		<div>
+			<h132 id="k8"> ■通販に関するお問い合わせ
+		</div>
+		<div>
+			<h133 id='k9'>0774-33-1140</h142>
+		</div>
+		<div>
+			<h134 id="k10">월~수, 금요일 : 10:00~ 16:00</h143>
+		</div>
+		<div>
+			<h135 id="k11">목요일: 휴무</h144>
+		</div>
+		<div>
+			<h136 id="k12">토요일: 10:00~18:00</h145>
+		</div>
+
+	</body>
+</html>
